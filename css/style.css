@@ -1,0 +1,57 @@
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+/* stili per header */
+header{
+    background-color: #ff6900;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-container img{
+    width: 100px;
+}
+
+/* rendo i contenitori più interni flex per allineare in verticale con classe d-flex */
+
+.d-flex{
+    display: flex;
+}
+
+nav .link-container{
+    align-items: center;
+}
+
+nav .logo-container{
+    align-items: center;
+}
+
+nav .icon-container{
+    align-items: center;
+}
+
+nav .link-container ul{
+    list-style: none;
+    display: flex;
+    column-gap: 1rem;
+    padding: 1rem 0;   
+}
+
+nav .link-container ul li a{
+    font-size: .8rem;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav .icon-container a{
+    text-decoration: none;
+    color: white;
+}
