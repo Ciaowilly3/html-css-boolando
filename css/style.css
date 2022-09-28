@@ -79,6 +79,7 @@ nav .icon-container a{
 
 .row{
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 /* cerco di inserire le scritte sopra le immagini con position */
