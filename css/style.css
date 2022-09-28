@@ -1,4 +1,9 @@
-
+:root{
+    --white: white;
+    --red: red;
+    --small-font: .8rem;
+    --smaller-font: .6rem;
+}
 
 *{
     margin: 0;
@@ -8,15 +13,18 @@
 /* stili per header */
 header{
     background-color: #ff6900;
+    margin-bottom: 2rem;
 }
 
 header nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 920px;
+    margin: auto;
 }
 
 .logo-container img{
-    width: 100px;
+    width: 5rem;
 }
 
 /* rendo i contenitori più interni flex per allineare in verticale con classe d-flex */
@@ -35,6 +43,8 @@ nav .logo-container{
 
 nav .icon-container{
     align-items: center;
+    font-size: var(--smaller-font);
+    column-gap: .3rem;
 }
 
 nav .link-container ul{
@@ -45,13 +55,83 @@ nav .link-container ul{
 }
 
 nav .link-container ul li a{
-    font-size: .8rem;
+    font-size: var(--smaller-font);
     text-decoration: none;
-    color: white;
+    color: var(--white);
     padding: 1rem 0;
 }
 
 nav .icon-container a{
     text-decoration: none;
-    color: white;
+    color: var(--white);
+}
+
+/* stili per il main */
+
+.main-container{
+    width: 920px;
+    margin: auto;
+}
+
+.modelimg{
+    width: 290px;
+}
+
+.row{
+    justify-content: space-between;
+}
+
+/* cerco di inserire le scritte sopra le immagini con position */
+
+.card{
+    position: relative;
+}
+
+.sconto{
+    display: flex;
+    position: absolute;
+    bottom: 5rem;
+    left: 0px;
+    font-size: var(--smaller-font);
+}
+
+.sconto > h5{
+    background-color: var(--red);
+    color: var(--white);
+    padding: .1rem .5rem;
+    margin-right: .2rem;
+}
+
+.sostenibile{
+    background-color: green;
+    color: var(--white);
+    padding: .1rem .5rem;
+}
+
+.heart{
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    padding: .5rem .8rem;
+    background-color: var(--white);
+    color: black;
+    text-decoration: none;
+}
+
+.marca{
+    font-size: var(--smaller-font);
+}
+
+.main-container h4{
+    font-size: var(--small-font);
+}
+
+.prezzo{
+    font-size: var(--smaller-font);
+    color: var(--red);
+}
+.prezzo > span{
+    color: black;
+    text-decoration: line-through;
+    
 }
